@@ -1,0 +1,1229 @@
+{
+  "info": {
+    "_postman_id": "c7cc7472-8172-4946-b004-7631643a047a",
+    "name": "URBAN GROCER",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "48268126",
+    "_collection_link": "https://go.postman.co/collection/48268126-c7cc7472-8172-4946-b004-7631643a047a?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Taste of Paris",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-abb39924-3e79-446a-8481-6fe25ae1e8c2.containerhub.tripleten-services.com/api/v1/kits/search?name=Tastes%20of%20Paris",
+          "protocol": "https",
+          "host": [
+            "cnt-abb39924-3e79-446a-8481-6fe25ae1e8c2",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "Tastes%20of%20Paris"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "My first set",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"My first set\",\r\n  \"cardId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/api/v1/kits",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get kits with card ID of 1",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/api/v1/kits?cardId=1",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits"
+          ],
+          "query": [
+            {
+              "key": "cardId",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products for kits",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"ids\": [\r\n        30,\r\n        90\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-abb39924-3e79-446a-8481-6fe25ae1e8c2.containerhub.tripleten-services.com/api/v1/products/kits",
+          "protocol": "https",
+          "host": [
+            "cnt-abb39924-3e79-446a-8481-6fe25ae1e8c2",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "products",
+            "kits"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Taste of Berlin/api/v1/kits/3",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"productsList\": [\r\n    {\r\n      \"id\": 0,\r\n      \"quantity\": 0\r\n    }\r\n  ],\r\n  \"name\": \"Taste of Berlin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-99348a15-d317-48eb-87e4-e6e84d37b54b.containerhub.tripleten-services.com/api/v1/kits/3",
+          "protocol": "https",
+          "host": [
+            "cnt-99348a15-d317-48eb-87e4-e6e84d37b54b",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "{{server_url}}/api/v1/orders No Warehouse",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id\": 0,\r\n  \"userId\": 0,\r\n  \"productsList\": [\r\n    {\r\n      \"id\": 1,\r\n      \"quantity\": 5\r\n    },\r\n    {\r\n      \"id\": 5,\r\n      \"quantity\": 5\r\n    }\r\n  ],\r\n  \"deliveryTime\": 11\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{server_url}}/api/v1/orders",
+          "host": [
+            "{{server_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET TASTE OF BERLIN{{server_url}}/api/v1/kits/3",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{server_url}}/api/v1/kits/3",
+          "host": [
+            "{{server_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deleted Taste of Berlin /api/v1/kits?cardId=1 using the Delete Request",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://cnt-ba45c144-d5d1-4e25-84e0-09996e852418.containerhub.tripleten-services.com/api/v1/kits?cardId=1",
+          "protocol": "https",
+          "host": [
+            "cnt-ba45c144-d5d1-4e25-84e0-09996e852418",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits"
+          ],
+          "query": [
+            {
+              "key": "cardId",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CHANGED THE PRICE OF A PRODUCT/api/v1/products/1",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"price\": 5\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-8f5e30df-25f7-48de-a06c-675a73f000cb.containerhub.tripleten-services.com/api/v1/products/1",
+          "protocol": "https",
+          "host": [
+            "cnt-8f5e30df-25f7-48de-a06c-675a73f000cb",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "products",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "THE PRICE CHANGED ITEM FELL TO BOTTOM OF LIST /api/db/resources/product_model.csv",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://cnt-8f5e30df-25f7-48de-a06c-675a73f000cb.containerhub.tripleten-services.com/api/db/resources/product_model.csv",
+          "protocol": "https",
+          "host": [
+            "cnt-8f5e30df-25f7-48de-a06c-675a73f000cb",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "db",
+            "resources",
+            "product_model.csv"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": "",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Set authorization",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer jknnFApafP4awfAIFfafam2fma",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Sample Kit\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-89d5ff38-d8ff-4b9c-8427-7a5ef5b30116.containerhub.tripleten-services.com/api/v1/kits",
+          "protocol": "https",
+          "host": [
+            "cnt-89d5ff38-d8ff-4b9c-8427-7a5ef5b30116",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "URL/api/v1/kits cURL command received",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"cardId\": 1, \"name\": \"Baking a pie\"} ",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-9a69b75d-ff1b-433a-b636-739089769854.containerhub.tripleten-services.com/api/v1/kits",
+          "protocol": "https",
+          "host": [
+            "cnt-9a69b75d-ff1b-433a-b636-739089769854",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits"
+          ]
+        },
+        "description": "Generated from cURL: curl --location --request POST 'URL/api/v1/kits' \\\r\n--header 'Content-Type: application/json' \\\r\n--data-raw '{\"cardId\": 1, \"name\": \"Baking a pie\"} '"
+      },
+      "response": []
+    },
+    {
+      "name": "Reading Logs (errored)",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://cnt-29a391b0-7271-4759-857c-0f1cadfe47d3.containerhub.tripleten-services.com/api/logs/main",
+          "protocol": "https",
+          "host": [
+            "cnt-29a391b0-7271-4759-857c-0f1cadfe47d3",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "logs",
+            "main"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ADDED EGGS MEDIUM AND GARLIC BREAD TO PARISapi/v1/kits/3/products",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"productsList\": [\r\n    {\r\n      \"id\": 12,\r\n      \"quantity\": 1\r\n    },\r\n     {\r\n      \"id\": 78,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-a109871b-2483-44c6-bda8-35597ce14506.containerhub.tripleten-services.com/api/v1/kits/3/products",
+          "protocol": "https",
+          "host": [
+            "cnt-a109871b-2483-44c6-bda8-35597ce14506",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits",
+            "3",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add all error messages if not human error to bug report",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"products\": [\r\n    {\r\n      \"id\": 1,\r\n      \"quantity\": 3\r\n    }\r\n  ],\r\n  \"deliveryTime\": 6\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-b8e7de3f-5275-4120-b162-b2f4c8c969e3.containerhub.tripleten-services.com/api/v1/couriers/check",
+          "protocol": "https",
+          "host": [
+            "cnt-b8e7de3f-5275-4120-b162-b2f4c8c969e3",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "couriers",
+            "check"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Using SWAGGER and cURL to find courier check/price",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{  \"deliveryTime\":  11,  \"products\": [    {      \"id\": 6,      \"quantity\": 20    }  ]}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-c8e00fd2-3fad-4938-a066-9754dcf08a03.containerhub.tripleten-services.com/api/v1/couriers/check",
+          "protocol": "https",
+          "host": [
+            "cnt-c8e00fd2-3fad-4938-a066-9754dcf08a03",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "couriers",
+            "check"
+          ]
+        },
+        "description": "Generated from cURL: curl -X POST \"https://cnt-c8e00fd2-3fad-4938-a066-9754dcf08a03.containerhub.tripleten-services.com/api/v1/couriers/check\" -H  \"accept: application/json\" -H  \"Content-Type: application/json\" -d \"{  \\\"deliveryTime\\\":  11,  \\\"products\\\": [    {      \\\"id\\\": 6,      \\\"quantity\\\": 20    }  ]}\""
+      },
+      "response": []
+    },
+    {
+      "name": "https://5ba56fb7-a5cd-4ed3-9d38-4d02101fbdb2.containerhub.tripleten-services.com/api/v1/products/kits",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"ids\": [1, 22]} ",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-ea5a1bf8-6751-4cd0-bd4e-a1d55149da04.containerhub.tripleten-services.com/api/v1/products/kits",
+          "protocol": "https",
+          "host": [
+            "cnt-ea5a1bf8-6751-4cd0-bd4e-a1d55149da04",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "products",
+            "kits"
+          ]
+        },
+        "description": "Generated from cURL: curl --location --request POST 'https://5ba56fb7-a5cd-4ed3-9d38-4d02101fbdb2.containerhub.tripleten-services.com/api/v1/products/kits' \\\r\n--header 'Content-Type: application/json' \\\r\n--data-raw '{\"ids\": [1, 22]} '"
+      },
+      "response": []
+    },
+    {
+      "name": "KITS https://cnt-23357bf5-531a-4dcb-be17-5463a426eb4b.containerhub.tripleten-services.com/api/db/resources/kit_model.csv",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-23357bf5-531a-4dcb-be17-5463a426eb4b.containerhub.tripleten-services.com/api/db/resources/kit_model.csv",
+          "protocol": "https",
+          "host": [
+            "cnt-23357bf5-531a-4dcb-be17-5463a426eb4b",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "db",
+            "resources",
+            "kit_model.csv"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": " ADDED TO PIZZA KIT https://cnt-d0ed10ff-e3fd-4b13-9e36-69f1a8aeaeb6.containerhub.tripleten-services.com/api/v1/kits/4/products",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"productsList\": [\r\n        {\r\n            \"id\": 61,\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"id\": 10,\r\n            \"quantity\": 2\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-d0ed10ff-e3fd-4b13-9e36-69f1a8aeaeb6.containerhub.tripleten-services.com/api/v1/kits/4/products",
+          "protocol": "https",
+          "host": [
+            "cnt-d0ed10ff-e3fd-4b13-9e36-69f1a8aeaeb6",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits",
+            "4",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Paprika Chips and Sprite added to Movie",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"productsList\": [\r\n        {\r\n            \"id\": 8,\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"quantity\": 2\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-54e3d0a2-6b3c-4571-a142-c9bbbefd85e9.containerhub.tripleten-services.com/api/v1/kits/2/products",
+          "protocol": "https",
+          "host": [
+            "cnt-54e3d0a2-6b3c-4571-a142-c9bbbefd85e9",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits",
+            "2",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Movie kit 2 updated",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://cnt-54e3d0a2-6b3c-4571-a142-c9bbbefd85e9.containerhub.tripleten-services.com/api/v1/kits/2",
+          "protocol": "https",
+          "host": [
+            "cnt-54e3d0a2-6b3c-4571-a142-c9bbbefd85e9",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://cnt-921b9c76-c022-488d-ad7f-d247c0fad7d1.containerhub.tripleten-services.com/api/v1/products/kits",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"ids\": [\r\n        20,\r\n        21\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-921b9c76-c022-488d-ad7f-d247c0fad7d1.containerhub.tripleten-services.com/api/v1/products/kits",
+          "protocol": "https",
+          "host": [
+            "cnt-921b9c76-c022-488d-ad7f-d247c0fad7d1",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "products",
+            "kits"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "XML belgian chocolate and Sprite avail food-city/calculate.xml",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "<InputModel>\r\n   <deliveryTime>9</deliveryTime>\r\n   <product id=\"4\" quantity=\"2\"/>\r\n   <product id=\"48\" quantity=\"2\"/>\r\n</InputModel>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-fe50d0d5-76ed-41ee-ae89-75e545cf8590.containerhub.tripleten-services.com/food-city/calculate.xml",
+          "protocol": "https",
+          "host": [
+            "cnt-fe50d0d5-76ed-41ee-ae89-75e545cf8590",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "food-city",
+            "calculate.xml"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://cnt-23c32a47-7796-40d6-8411-a575e95227a4.containerhub.tripleten-services.com/api/v1/warehouses/check",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"products\": [\r\n        {\r\n            \"id\": 1,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"id\": 6,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-a0d682d5-edc4-4131-b681-4cd8890bee45.containerhub.tripleten-services.com/api/v1/warehouses/check",
+          "protocol": "https",
+          "host": [
+            "cnt-a0d682d5-edc4-4131-b681-4cd8890bee45",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "warehouses",
+            "check"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "converted sprite into apidoc https://cnt-771afc08-8826-4fe9-ab62-e2de1e1dc762.containerhub.tripleten-services.com/api/v1/warehouses/check",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"products\": [\r\n        {\r\n            \"id\": 4,\r\n            \"quantity\": 2\r\n        }\r\n        \r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-771afc08-8826-4fe9-ab62-e2de1e1dc762.containerhub.tripleten-services.com/api/v1/warehouses/check",
+          "protocol": "https",
+          "host": [
+            "cnt-771afc08-8826-4fe9-ab62-e2de1e1dc762",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "warehouses",
+            "check"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "converted sprite into apidoc from json to xml https://cnt-771afc08-8826-4fe9-ab62-e2de1e1dc762.containerhub.tripleten-services.com/api/logs/secondary",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"products\": [\r\n        {\r\n            \"id\": 4,\r\n            \"quantity\": 2\r\n        }\r\n        \r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-771afc08-8826-4fe9-ab62-e2de1e1dc762.containerhub.tripleten-services.com/api/logs/secondary",
+          "protocol": "https",
+          "host": [
+            "cnt-771afc08-8826-4fe9-ab62-e2de1e1dc762",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "logs",
+            "secondary"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "orange juicse from json to xml https://cnt-a0d682d5-edc4-4131-b681-4cd8890bee45.containerhub.tripleten-services.com/api/logs/secondary",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://cnt-a0d682d5-edc4-4131-b681-4cd8890bee45.containerhub.tripleten-services.com/api/logs/secondary",
+          "protocol": "https",
+          "host": [
+            "cnt-a0d682d5-edc4-4131-b681-4cd8890bee45",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "logs",
+            "secondary"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "RAISINS IN STOCK SOAP RESPONSE https://cnt-4394dad4-c648-4147-b4c7-99cd304d0fb2.containerhub.tripleten-services.com/big-world/wsdl",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"  xmlns:tns=\"WebServices.WarehouseWsdl\">\r\n    <soap:Body>\r\n        <tns:checkSupply>\r\n            <tns:deliveryTime>10</tns:deliveryTime>\r\n            <tns:products>\r\n                <tns:products>\r\n                    <id>2</id>\r\n                    <quantity>1</quantity>\r\n                </tns:products>\r\n                <tns:products>\r\n                    <id>49</id>\r\n                    <quantity>1</quantity>\r\n                </tns:products>\r\n            </tns:products>\r\n        </tns:checkSupply>\r\n    </soap:Body>\r\n</soap:Envelope>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-4394dad4-c648-4147-b4c7-99cd304d0fb2.containerhub.tripleten-services.com/big-world/wsdl",
+          "protocol": "https",
+          "host": [
+            "cnt-4394dad4-c648-4147-b4c7-99cd304d0fb2",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "big-world",
+            "wsdl"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "checking SOAP https://cnt-ac0d7947-bf50-45d2-a347-53a6daacaf94.containerhub.tripleten-services.com/api/logs/secondary",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://cnt-ac0d7947-bf50-45d2-a347-53a6daacaf94.containerhub.tripleten-services.com/api/logs/secondary",
+          "protocol": "https",
+          "host": [
+            "cnt-ac0d7947-bf50-45d2-a347-53a6daacaf94",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "logs",
+            "secondary"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://cnt-6ddf7fcf-887d-4fff-a2d0-e52c4c72e8fd.containerhub.tripleten-services.com/api/v1/warehouses/check",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"products\": [\r\n        {\r\n            \"id\": 1,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"id\": 6,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-6ddf7fcf-887d-4fff-a2d0-e52c4c72e8fd.containerhub.tripleten-services.com/api/v1/warehouses/check",
+          "protocol": "https",
+          "host": [
+            "cnt-6ddf7fcf-887d-4fff-a2d0-e52c4c72e8fd",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "warehouses",
+            "check"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "FRUIT AND CHIBATTA AVAIL IN WAREHOUSE https://cnt-a7994bdb-395d-4463-bdb2-ef732d92e0db.containerhub.tripleten-services.com/api/v1/warehouses/check",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"products\": [\r\n        {\r\n            \"id\": 5,\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"id\": 13,\r\n            \"quantity\": 3\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-a7994bdb-395d-4463-bdb2-ef732d92e0db.containerhub.tripleten-services.com/api/v1/warehouses/check",
+          "protocol": "https",
+          "host": [
+            "cnt-a7994bdb-395d-4463-bdb2-ef732d92e0db",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "warehouses",
+            "check"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "FRUIT AND CHIABATTA AVAIL IN WAREHOUSE https://cnt-a7994bdb-395d-4463-bdb2-ef732d92e0db.containerhub.tripleten-services.com/api/logs/secondary",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://cnt-a7994bdb-395d-4463-bdb2-ef732d92e0db.containerhub.tripleten-services.com/api/logs/secondary",
+          "protocol": "https",
+          "host": [
+            "cnt-a7994bdb-395d-4463-bdb2-ef732d92e0db",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "logs",
+            "secondary"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "invalid data testing https://cnt-633b6f80-a99d-41e1-9d74-70556fecb320.containerhub.tripleten-services.com/api/v1/kits",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": “A@!”,\r\n  \"cardId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-633b6f80-a99d-41e1-9d74-70556fecb320.containerhub.tripleten-services.com/api/v1/kits",
+          "protocol": "https",
+          "host": [
+            "cnt-633b6f80-a99d-41e1-9d74-70556fecb320",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://cnt-6be2bfb8-2644-4992-a81d-6503a16b7ead.containerhub.tripleten-services.com/api/v1/users",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstName\": \"Max\",\r\n    \"phone\": “12345678901”,\r\n    \"address\": \"8042 Lancaster Ave.Hamburg, NY\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-175cee75-adc2-4c2d-b851-76c2380ae6fc.containerhub.tripleten-services.com/api/v1/users",
+          "protocol": "https",
+          "host": [
+            "cnt-175cee75-adc2-4c2d-b851-76c2380ae6fc",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ADDED EGGS MEDIUM AND GARLIC BREAD TO PARISapi/v1/kits/3/products",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"productsList\": [\r\n    {\r\n      \"id\": 12,\r\n      \"quantity\": 1\r\n    },\r\n     {\r\n      \"id\": 78,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-a109871b-2483-44c6-bda8-35597ce14506.containerhub.tripleten-services.com/api/v1/kits/3/products",
+          "protocol": "https",
+          "host": [
+            "cnt-a109871b-2483-44c6-bda8-35597ce14506",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "kits",
+            "3",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "converted sprite into apidoc https://cnt-771afc08-8826-4fe9-ab62-e2de1e1dc762.containerhub.tripleten-services.com/api/v1/warehouses/check",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"products\": [\r\n        {\r\n            \"id\": 4,\r\n            \"quantity\": 2\r\n        }\r\n        \r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-771afc08-8826-4fe9-ab62-e2de1e1dc762.containerhub.tripleten-services.com/api/v1/warehouses/check",
+          "protocol": "https",
+          "host": [
+            "cnt-771afc08-8826-4fe9-ab62-e2de1e1dc762",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "warehouses",
+            "check"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseURL",
+      "value": ""
+    },
+    {
+      "key": "server_url",
+      "value": ""
+    }
+  ]
+}
