@@ -1,0 +1,261 @@
+{
+  "info": {
+    "_postman_id": "725f9e7d-2be8-4e0d-85be-907326d40010",
+    "name": "Final",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "48268126",
+    "_collection_link": "https://go.postman.co/collection/48268126-725f9e7d-2be8-4e0d-85be-907326d40010?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "https://cnt-22673b8e-8c24-4141-9dcc-8846e92324db.containerhub.tripleten-services.com/api/v1/courier/123456",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://cnt-22673b8e-8c24-4141-9dcc-8846e92324db.containerhub.tripleten-services.com/api/v1/courier/123456",
+          "protocol": "https",
+          "host": [
+            "cnt-22673b8e-8c24-4141-9dcc-8846e92324db",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "courier",
+            "123456"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://cnt-22673b8e-8c24-4141-9dcc-8846e92324db.containerhub.tripleten-services.com/api/v1/courier/123456",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-22673b8e-8c24-4141-9dcc-8846e92324db.containerhub.tripleten-services.com/api/v1/courier/123456",
+          "protocol": "https",
+          "host": [
+            "cnt-22673b8e-8c24-4141-9dcc-8846e92324db",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "courier",
+            "123456"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://cnt-ff8691b5-0d69-49da-ac36-6c04049e926e.containerhub.tripleten-services.com/api/v1/courier",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"login\": \"John \",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"saske\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-57339426-232a-4329-9ac3-0bc2df7c702f.containerhub.tripleten-services.com/api/v1/courier",
+          "protocol": "https",
+          "host": [
+            "cnt-57339426-232a-4329-9ac3-0bc2df7c702f",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "courier"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "order and track number",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstName\": \"Naruto\",\r\n    \"lastName\": \"Uchiha\",\r\n    \"address\": \"Konoha, 142 apt.\",\r\n    \"metroStation\": 4,\r\n    \"phone\": \"+7 800 355 35 35\",\r\n    \"rentTime\": 5,\r\n    \"deliveryDate\": \"2020-06-06\",\r\n    \"comment\": \"Saske, come back to Konoha\",\r\n    \"color\": [\r\n        \"BLACK\"\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-8f1ebd59-fd09-4106-a356-ec1847ceed20.containerhub.tripleten-services.com/api/v1/orders",
+          "protocol": "https",
+          "host": [
+            "cnt-8f1ebd59-fd09-4106-a356-ec1847ceed20",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://cnt-8f1ebd59-fd09-4106-a356-ec1847ceed20.containerhub.tripleten-services.com/api/v1/orders/accept/:id",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstName\": \"Naruto\",\r\n    \"lastName\": \"Uchiha\",\r\n    \"address\": \"Konoha, 142 apt.\",\r\n    \"metroStation\": 4,\r\n    \"phone\": \"+7 800 355 35 35\",\r\n    \"rentTime\": 5,\r\n    \"deliveryDate\": \"2020-06-06\",\r\n    \"comment\": \"Saske, come back to Konoha\",\r\n    \"color\": [\r\n        \"BLACK\"\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-98fc3c66-fc84-4087-8762-51bb9a41f7cb.containerhub.tripleten-services.com/api/v1/orders",
+          "protocol": "https",
+          "host": [
+            "cnt-98fc3c66-fc84-4087-8762-51bb9a41f7cb",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/api/v1/courier",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"login\": \"ninja\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"saske\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-ed1e2b6e-6f19-4201-8f2d-c854b3c2a87e.containerhub.tripleten-services.com/api/v1/courier",
+          "protocol": "https",
+          "host": [
+            "cnt-ed1e2b6e-6f19-4201-8f2d-c854b3c2a87e",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "courier"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/api/v1/courier/login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"login\": \"ninja\",\r\n    \"password\": \"1234\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-ed1e2b6e-6f19-4201-8f2d-c854b3c2a87e.containerhub.tripleten-services.com/api/v1/courier/login",
+          "protocol": "https",
+          "host": [
+            "cnt-ed1e2b6e-6f19-4201-8f2d-c854b3c2a87e",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "courier",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "\"track\":761622/api/v1/orders",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstName\": \"Naruto\",\r\n    \"lastName\": \"Uchiha\",\r\n    \"address\": \"Konoha, 142 apt.\",\r\n    \"metroStation\": 4,\r\n    \"phone\": \"+7 800 355 35 35\",\r\n    \"rentTime\": 5,\r\n    \"deliveryDate\": \"2026-06-06\",\r\n    \"comment\": \"Saske, come back to Konoha\",\r\n    \"color\": [\r\n        \"BLACK\"\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cnt-ed1e2b6e-6f19-4201-8f2d-c854b3c2a87e.containerhub.tripleten-services.com/api/v1/orders",
+          "protocol": "https",
+          "host": [
+            "cnt-ed1e2b6e-6f19-4201-8f2d-c854b3c2a87e",
+            "containerhub",
+            "tripleten-services",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
